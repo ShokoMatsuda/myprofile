@@ -1,0 +1,86 @@
+/* PC、スマホ共通スタイル */
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* PC用のスタイル */
+/* 横幅設定 */
+body {
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+/* ナビゲーション */
+#nav-pc {
+    text-align: right;
+    font-size: 34px;
+}
+
+/* ナビゲーションリンクの装飾設定 */
+#nav-pc > a {
+    text-decoration: none;
+}
+#nav-pc > a:link {
+    color: #000000;
+}
+#nav-pc > a:visited {
+    color: #000000;
+}
+
+/* メイン */
+#main-img {
+    width: 100vw;
+}
+
+h2 {
+    font-size: 34px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* About */
+#about {
+   margin: 80px auto 80px auto;
+   width: 100%;
+}
+#about-flex {
+    display: flex;
+    justify-content: center;
+}
+#about-img > img {
+    border-radius: 200px 200px 200px 200px;
+}
+
+/* Works */
+#works-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#works-flex > div {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* フッター */
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#copyright {
+    font-size: 18px;
+}
