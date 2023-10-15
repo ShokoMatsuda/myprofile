@@ -7,22 +7,22 @@ body {
 
 /* 横幅設定 */
 body {
-    max-width: 1200px;
-    min-width: 768px;
     margin: 0 auto 0 auto;
 }
 
 /* ヘッダー */
-header {
+/* header {
     padding-top: 15px;
     padding-bottom: 15px;
-}
+} */
 
 /* ナビゲーション */
 #nav-pc {
     font-size: 34px;
     display: flex;
     justify-content: space-between;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
 }
 
 /* ナビゲーションリンクの装飾設定 */
@@ -43,7 +43,7 @@ header {
 
 /* メイン */
 #main-img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h2 {
@@ -59,6 +59,7 @@ h3 {
 #about {
    margin: 80px auto 80px auto;
    width: 100%;
+   max-width: 960px;
 }
 #about-flex {
     display: flex;
@@ -71,14 +72,28 @@ h3 {
 /* Works */
 #works-flex {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+}
+ .item {
+    width: 25%;
+} 
+
+.item img {
+    max-width: 100%;
+    height: auto;
 }
 
-#works-flex > div {
-    margin-right: 20px;
-    margin-left: 20px;
-    border: 1px solid #00f;
+.item_center {
+    padding-right: 20px;
+    padding-left: 20px;
 }
+
+ /* #works-flex div {
+    border: 1px solid #00f;
+}  */
 
 /* フッター */
 footer {
