@@ -3,8 +3,6 @@ body {
     background-color: #ffffff;
 }
 
-@media screen and (min-width:768px) {
-
 /* 横幅設定 */
 body {
     margin: 0 auto 0 auto;
@@ -20,6 +18,7 @@ body {
 #nav-pc {
     font-size: 34px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px auto 20px auto;
     max-width: 960px;
@@ -105,17 +104,22 @@ footer {
     font-size: 18px;
 }
 
-}
-
 /* 画面幅が767px以下のとき */
 @media screen and (max-width:767px) {
     #works-flex {
+        display: block;
         width: 100%;
         text-align: center;
+        padding-bottom: 40px;
     }
 
-    /* メイン */
-#main-img {
-    width: 100%;
-}
+    .item {
+        width: 100%;
+        margin: 0 auto 0 auto;
+
+    }
+
+    .item_center {
+        padding: 0;
+    }
 }
