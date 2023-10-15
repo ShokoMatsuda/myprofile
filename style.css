@@ -1,10 +1,10 @@
-/* PC、スマホ共通スタイル */
 body {
     color: #000000;
     background-color: #ffffff;
 }
 
-/* PC用のスタイル */
+@media screen and (min-width:768px) {
+
 /* 横幅設定 */
 body {
     max-width: 1200px;
@@ -14,31 +14,36 @@ body {
 
 /* ヘッダー */
 header {
-    display: flex;
-    justify-content: space-between;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* ナビゲーション */
 #nav-pc {
-    text-align: right;
     font-size: 34px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ナビゲーションリンクの装飾設定 */
-#nav-pc > a {
+#nav-pc a {
     text-decoration: none;
 }
-#nav-pc > a:link {
+#nav-pc a:link {
     color: #000000;
 }
-#nav-pc > a:visited {
+#nav-pc a:visited {
     color: #000000;
+}
+
+.home {
+    border: 1px solid #000000;
+    padding: 10px;
 }
 
 /* メイン */
 #main-img {
-    width: 100vw;
+    width: 100%;
 }
 
 h2 {
@@ -70,9 +75,9 @@ h3 {
 }
 
 #works-flex > div {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 1px solid #00f;
 }
 
 /* フッター */
@@ -83,4 +88,19 @@ footer {
 
 #copyright {
     font-size: 18px;
+}
+
+}
+
+/* 画面幅が767px以下のとき */
+@media screen and (max-width:767px) {
+    #works-flex {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* メイン */
+#main-img {
+    width: 100%;
+}
 }
